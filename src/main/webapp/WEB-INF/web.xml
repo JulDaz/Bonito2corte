@@ -5,19 +5,43 @@
     version="3.0">
     <display-name>CrunchifyJSPServletExample</display-name>
     <welcome-file-list>
-        <welcome-file>index.html</welcome-file>
-        <welcome-file>index.htm</welcome-file>
         <welcome-file>index.jsp</welcome-file>
-        <welcome-file>default.html</welcome-file>
-        <welcome-file>default.htm</welcome-file>
-        <welcome-file>default.jsp</welcome-file>
     </welcome-file-list>
     <servlet>
-        <servlet-name>Hello</servlet-name>
-        <servlet-class>com.crunchify.jsp.servlet.HelloCrunchify</servlet-class>
+        <servlet-name>NuevoAlquilerServlet</servlet-name>
+        <servlet-class>controlador.NuevoAlquilerServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>NuevaPersonaServlet</servlet-name>
+        <servlet-class>controlador.NuevaPersonaServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>NuevaHabitacionServlet</servlet-name>
+        <servlet-class>controlador.NuevaHabitacionServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ListarServlet</servlet-name>
+        <servlet-class>controlador.ListarServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>Hello</servlet-name>
-        <url-pattern>/CrunchifyServlet</url-pattern>
+        <servlet-name>NuevoAlquilerServlet</servlet-name>
+        <url-pattern>/NuevoAlquilerServlet</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>NuevaPersonaServlet</servlet-name>
+        <url-pattern>/NuevaPersonaServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>NuevaHabitacionServlet</servlet-name>
+        <url-pattern>/NuevaHabitacionServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ListarServlet</servlet-name>
+        <url-pattern>/ListarServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
 </web-app>
