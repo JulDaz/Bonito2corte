@@ -14,6 +14,7 @@
     </head>
     <body>
         <a href="habitaciones.jsp">DEFINIR HABITACIONES</a>
+        <a href="nuevaPersona.jsp">DEFINIR HABITACIONES</a>
         <a href="alquilar.jsp">ALQUILAR HABITACION</a>
         <a href="listar.jsp">LISTAR</a>
     </body>
